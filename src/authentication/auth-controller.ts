@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 import { generateToken } from "./auth-service";
-import { validateRequest } from '../middleware/validate-request';
+import { validateRequest } from '../utils/validate-request';
 import { authSchema } from './auth-schema';
 
 export const getToken = async (req: Request, res: Response): Promise<void> => {
