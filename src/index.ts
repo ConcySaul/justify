@@ -1,5 +1,5 @@
 import express from 'express';
-import { getToken } from './authentification/auth-controller';
+import { getToken } from './authentication/auth-controller';
 
 const app = express();
 

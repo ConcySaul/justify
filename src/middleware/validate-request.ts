@@ -1,5 +1,5 @@
 import { ZodSchema } from "zod";
-import { Auth } from "../authentification/auth-type.js";
+import { Auth } from "../authentication/auth-type";
 
 type Data = Auth | string;
 
