@@ -1,7 +1,7 @@
 {
   "name": "justify",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "dist/src/index.js",
   "scripts": {
     "start": "node dist/src/index.js",
     "build": "tsc",
