@@ -14,6 +14,7 @@ Finally, run
 at the root of the directory to run the postgres database
 
 You can also change the environment variables in the docker-compose.yml and in the .env
+
 <img src="images/docker-compose-env.png" alt="docker-compose environment variables" width="300"/>
 
 <img src="images/env_screenshot.png" alt=".env file" width="300"/>
