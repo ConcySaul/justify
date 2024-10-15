@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import dotenv from 'dotenv';
-import { validateRequest } from '../middleware/validate-request';
+import { validateRequest } from '../utils/validate-request';
 import { plainTextSchema } from './justify-schema';
 import { justifyText } from './justify-service';
 
