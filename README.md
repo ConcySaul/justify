@@ -1,12 +1,15 @@
 ## Local run
 To locally run the API, you need to
+
 > npm run build
 > npm run start
+
 These two command will build and run the nodejs server.
 
 Finally, run
+
 > docker-compose up
-> 
+
 at the root of the directory to run the postgres database
 
 You can also change the environment variables in the docker-compose.yml and in the .env
