@@ -1,6 +1,8 @@
 ## Local run
 To locally run the API, you need to
 
+> npm run install
+
 > npm run build
 
 > npm run start
