@@ -2,6 +2,7 @@
 To locally run the API, you need to
 
 > npm run build
+
 > npm run start
 
 These two command will build and run the nodejs server.
