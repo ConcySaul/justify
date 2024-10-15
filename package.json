@@ -1,9 +1,9 @@
 {
   "name": "justify",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/src/index.js",
     "build": "tsc",
     "test": "jest --config ./jest.config.ts"
   },
