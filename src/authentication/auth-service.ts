@@ -10,7 +10,6 @@ export const generateToken = async (email: string): Promise<string> => {
         if (!process.env.JWT_SECRET_KEY) {
             throw new Error('No jwt secret found');
         }
-    
         const token: string = await jwt.sign({
             id: user.id,
             email: user.email

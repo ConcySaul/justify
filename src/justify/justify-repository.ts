@@ -2,7 +2,7 @@ import { pool } from "../config/database"
 
 export const saveWordsUsed = async (userId: number, wordsNumber: number): Promise<void> => {
     await pool.query(`
-            INSERT INTO words (user_id, words_used)
+            INSERT INTO used (user_id, words_used)
             VALUES ($1, $2)
         `, [userId, wordsNumber]);
 }
@@ -13,7 +13,7 @@ export const getWordsNumber = async (userId: number): Promise<number> => {
 
     const wordsUsed = await pool.query(`
         SELECT COALESCE(SUM(words_used), 0) AS total_words 
-        FROM words 
+        FROM used
         WHERE user_id = $1 AND DATE(created_at) = $2
         `, [userId, stringToday]);
 

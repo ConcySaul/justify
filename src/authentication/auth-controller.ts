@@ -6,7 +6,6 @@ import { authSchema } from './auth-schema';
 
 export const getToken = async (req: Request, res: Response): Promise<void> => {
     try {
-        console.log('bonjour');
         const { body } = req;
         if (!await validateRequest(authSchema, body)) {
             res.status(400).json({'message': 'Bad Request'});
@@ -23,6 +22,7 @@ export const getToken = async (req: Request, res: Response): Promise<void> => {
             token
         });
     } catch (error) {
+        console.log(error);
         res.status(500).json({'message': 'Internal Server Error'});
     }
 }
